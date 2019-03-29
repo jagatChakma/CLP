@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CLP</string>
+
+    <string name="bangla">Bangla</string>
+    <string name="english">English</string>
+    <string name="kobita">Kobita</string>
+    <string name="math">Math</string>
+    <string name="saroborno">saroborno</string>
+
+    <string name="option1">Bangla</string>
+    <string name="option2">English</string>
+    <string name="option3">Math</string>
+    <string name="option4">Etc..</string>
+</resources>

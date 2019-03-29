@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="classStander">#813ebf</color>
+    <color name="classAccess">#52b172</color>
+    <color name="classBorder">#799e0a</color>
+    <color name="classBackground">#acc464</color>
+    <color name="classMainBackground">#5133be</color>
+
+
+    <color name="Background_color">#fcfcfc</color>
+    <color name="material_deep_purple">#673AB7</color>
+    <color name="material_pink">#E91F63</color>
+    <color name="material_green">#4CAF50</color>
+    <color name="material_blue">#2196F3</color>
+</resources>
