@@ -33,29 +33,64 @@
             android:textSize="50sp"
             android:gravity="center_horizontal"
             android:background="@drawable/background"/>
-
     </LinearLayout>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="360dp"
         android:layout_height="220dp"
-        android:gravity="center"
-        android:padding="50dp"
-        android:background="@drawable/background">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Writeable place"
-            android:textSize="22sp"
-            android:gravity="center_vertical"/>
+        android:background="@drawable/background"
+        android:padding="0dp">
+        <com.example.jmc.childlearning.CanvasView
+            android:id="@+id/canvasViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearlayoutId"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"/>
+        <LinearLayout
+            android:id="@+id/linearlayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@drawable/button_main_manu"
+            android:weightSum="4">
+            <ImageView
+                android:id="@+id/clearImageCanvas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/refresh_image" />
+            <ImageView
+                android:id="@+id/penImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/brush_image" />
+            <ImageView
+                android:id="@+id/speakerImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/speaker_image" />
+            <ImageView
+                android:id="@+id/saveImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/save_image" />
+        </LinearLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/classBackground"
         android:weightSum="2">
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -76,7 +111,6 @@
                 android:text="'A' a for apple"
                 android:textAlignment="center"
                 android:textSize="22sp"/>
-
         </LinearLayout>
         <TextView
             android:layout_width="0dp"
@@ -86,7 +120,6 @@
             android:textSize="22sp"
             android:gravity="center_horizontal"
             android:background="@drawable/background"/>
-
     </LinearLayout>
 
     <LinearLayout
@@ -96,26 +129,22 @@
         android:background="@color/colorAccent"
         android:orientation="horizontal"
         android:weightSum="2">
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:layout_gravity="left">
-
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/login" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
-
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,7 +152,6 @@
                 android:gravity="right"
                 android:layout_gravity="right"/>
         </LinearLayout>
-
     </LinearLayout>
 
 </LinearLayout>

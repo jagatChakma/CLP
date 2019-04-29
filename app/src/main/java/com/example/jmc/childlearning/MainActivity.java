@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         layout_etc.setOnClickListener(this);
     }
 
+
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.bangla_button){
