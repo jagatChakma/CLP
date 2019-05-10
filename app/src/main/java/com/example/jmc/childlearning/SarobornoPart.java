@@ -1,6 +1,7 @@
 package com.example.jmc.childlearning;
 
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +14,7 @@ import java.util.UUID;
 
 public class SarobornoPart extends AppCompatActivity implements View.OnClickListener {
     private CanvasView canvasView;
-    private ImageView imageView1, imageView2, imageView3, imageView4;
+    private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,21 +22,32 @@ public class SarobornoPart extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_saroborno_part);
 
         canvasView = findViewById(R.id.canvasViewId);
-        imageView1 = findViewById(R.id.clearImageCanvas);
-        imageView2 = findViewById(R.id.penImageButton);
-        imageView3 = findViewById(R.id.speakerImageButton);
-        imageView4 = findViewById(R.id.saveImageButton);
+        imageView1 = findViewById(R.id.previrwImageButton);
+        imageView2 = findViewById(R.id.clearImageCanvas);
+        imageView3 = findViewById(R.id.penImageButton);
+        imageView4 = findViewById(R.id.speakerImageButton);
+        imageView5 = findViewById(R.id.saveImageButton);
+        imageView6 = findViewById(R.id.nextImageButton);
 
         imageView1.setOnClickListener(this);
         imageView2.setOnClickListener(this);
         imageView3.setOnClickListener(this);
         imageView4.setOnClickListener(this);
+        imageView5.setOnClickListener(this);
+        imageView6.setOnClickListener(this);
+
+
     }
 
 
     @Override
     public void onClick(View v) {
+        final MediaPlayer mp1 = MediaPlayer.create(getApplicationContext(),R.raw.sound1);
+
         switch (v.getId()){
+            case R.id.previrwImageButton:
+                Toast.makeText(this, "Preview", Toast.LENGTH_SHORT).show();
+                break;
             case R.id.clearImageCanvas:
                 canvasView.clearCanvas();
                 break;
@@ -43,10 +55,14 @@ public class SarobornoPart extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(this, "pancil tuch", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.speakerImageButton:
-                Toast.makeText(this, "pancil tuch", Toast.LENGTH_SHORT).show();
+                mp1.start();
+                //Toast.makeText(this, "pancil tuch", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.saveImageButton:
                 saveImageButtonAction();
+                break;
+            case R.id.nextImageButton:
+                Toast.makeText(this, "Next", Toast.LENGTH_SHORT).show();
         }
     }
 
