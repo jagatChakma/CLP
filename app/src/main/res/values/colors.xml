@@ -10,7 +10,7 @@
     <color name="classMainBackground">#5133be</color>
 
 
-    <color name="Background_color">#fcfcfc</color>
+    <color name="Background_color_white">#fcfcfc</color>
     <color name="material_deep_purple">#673AB7</color>
     <color name="material_pink">#E91F63</color>
     <color name="material_green">#4CAF50</color>

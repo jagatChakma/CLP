@@ -5,65 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bangla_item_backgrount"
+    android:background="@drawable/bangladeshpartbackground"
     tools:context=".BanglaActivity">
 
     <Button
         android:id="@+id/buttonSaroborno"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="@string/saroborno"
         android:textSize="20sp"
+        android:textColor="@color/Background_color_white"
         android:layout_gravity="center"
         android:background="@drawable/button_secandary_manu"/>
     <Button
+        android:id="@+id/button_banjonborno_manu"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="banjonborno"
         android:textSize="20sp"
         android:layout_gravity="center"
-        android:background="@drawable/button_secandary_manu"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="kar"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:background="@drawable/button_secandary_manu"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="ful"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:background="@drawable/button_secandary_manu"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="paki"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:background="@drawable/button_secandary_manu"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="gas"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:background="@drawable/button_secandary_manu"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="pool"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:background="@drawable/button_secandary_manu"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="etc."
-        android:textSize="20sp"
-        android:layout_gravity="center"
+        android:textColor="@color/Background_color_white"
         android:background="@drawable/button_secandary_manu"/>
 
 </LinearLayout>

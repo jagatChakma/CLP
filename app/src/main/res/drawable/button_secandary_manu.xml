@@ -8,6 +8,8 @@
         android:right="15dp"
         android:top="0dp"
         android:bottom="0dp"/>
+    <solid
+        android:color="@color/classAccess"/>
     <stroke
         android:width="2dp"
         android:color="@color/classAccess" />
